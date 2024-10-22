@@ -58,3 +58,16 @@ variable "sns_email" {
  description = "The email address subscibing to the SNS topic"
 }
 
+variable "lambda_root" {
+  type        = string
+  description = "The relative path to the source of the lambda"
+  default     = "../lambda"
+}
+
+variable "lambda_filename" {
+  type        = string
+  description = "The filename containing the Python code for the Lambda"
+  default     = "query-log-insights.py"
+}
+
+
