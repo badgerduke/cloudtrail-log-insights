@@ -23,7 +23,7 @@ security_group_name = "demo-sg"
 sns_topic_name = "demo-sns-2"
 
 # The email address subscibing to the SNS topic
-sns_email = "erichamacher@protonmail.com"
+sns_email = "<your_email>"
 
 
 
