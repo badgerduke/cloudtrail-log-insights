@@ -18,29 +18,9 @@ variable "custom_trail_cw_log_group_name" {
  description = "The name of the CloudWatch log group to deliver CloudTrail logs"
 }
 
-variable "metric_filter_name" {
+variable "cloudtrail_event_name" {
  type = string
- description = "The name of the CloudWatch metric filter"
-}
-
-variable "metric_filter_pattern" {
- type = string
- description = "The metric filter pattern"
-}
-
-variable "metric_filter_metric_namespace" {
- type = string
- description = "The custom namespace for the produced metric"
-}
-
-variable "metric_filter_metric_name" {
- type = string
- description = "The name of the metric to store filter matches"
-}
-
-variable "alarm_name" {
- type = string
- description = "The name of the CloudWatch Alarm"
+ description = "The cloudtrail event name to search for"
 }
 
 variable "security_group_name" {
@@ -70,4 +50,14 @@ variable "lambda_filename" {
   default     = "query-log-insights.py"
 }
 
+variable "lambda_handler" {
+  type        = string
+  description = "The handler for the Lambda function"
+  default     = "query-log-insights.lambda_handler"
+}
 
+variable "lambda_runtime" {
+  type        = string
+  description = "The runtime for the Lambda function"
+  default     = "python3.12"
+}

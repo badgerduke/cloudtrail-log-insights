@@ -3,10 +3,10 @@ import os
 import awswrangler as wr
 from datetime import datetime, timedelta
 
-boto3.setup_default_session(region_name=region)
+boto3.setup_default_session(region_name="us-east-1")
 
-log_group_name = os.environ['log_group_name']
-event_name = os.environ['event_name']
+log_group_name = os.environ['LOG_GROUP_NAME']
+event_name = os.environ['EVENT_NAME']
 
 def lambda_handler(event, context):
     current_time = datetime.now()
