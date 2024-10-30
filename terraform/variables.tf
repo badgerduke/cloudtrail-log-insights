@@ -44,6 +44,13 @@ variable "lambda_root" {
   default     = "../lambda"
 }
 
+variable "dist_root" {
+  type        = string
+  description = "The relative path to the dist folder"
+  default     = "../dist"
+}
+
+
 variable "lambda_filename" {
   type        = string
   description = "The filename containing the Python code for the Lambda"

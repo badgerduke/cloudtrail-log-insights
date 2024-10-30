@@ -5,3 +5,9 @@ terraform/terraform.tfstate.backup
 terraform.tfstate
 terraform/*.zip
 venv/
+
+lambda/*
+!lambda/query-log-insights.py
+
+dist/*
+!dist/requirements.txt
