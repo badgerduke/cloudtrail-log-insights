@@ -2,6 +2,7 @@ import boto3
 from datetime import datetime, timedelta
 import time
 import os
+import json
 
 client = boto3.client('logs')
 
@@ -17,7 +18,7 @@ def lambda_handler(event, context):
         logGroupName=log_group_name,
         startTime=int((current_time - timedelta(hours=1)).timestamp()),
         endTime=int(datetime.now().timestamp()),
-        queryString=f'filter eventName="{event_name}" stats count(*) as Total_Count',
+        queryString=f'filter eventName="{event_name}" | fields userIdentity.type, userIdentity.userName, eventTime, eventName, requestParameters',
     )
 
     query_id = start_query_response['queryId']
@@ -30,3 +31,6 @@ def lambda_handler(event, context):
         get_query_results_response = client.get_query_results(
             queryId=query_id
         )     
+    
+    resultsString = json.dumps(get_query_results_response, indent=2)
+    print("RESULT: ", resultsString)

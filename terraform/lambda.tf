@@ -89,7 +89,9 @@ resource "aws_iam_policy" "query_log_insights_policy" {
       {
         "Effect": "Allow",
         "Action": [
-          "logs:StartQuery"
+          "logs:StartQuery",
+          "logs:GetQueryResults"
+
         ],
         "Resource": "*"
       }
