@@ -23,7 +23,13 @@ security_group_name = "demo-sg"
 sns_topic_name = "demo-sns-2"
 
 # The email address subscibing to the SNS topic
-sns_email = "<your_email>"
+sns_email = "erichamacher@protonmail.com"
+
+# The name of the S3 bucket storing Quicksight Dataset
+quicksight_S3_name = "hamacher-quicksight"
+
+# The name of the folder in the Quicksight S3 bucket to store the Quicksight Dataset
+quicksight_S3_folder = "cloudtrail-log-insights"
 
 
 

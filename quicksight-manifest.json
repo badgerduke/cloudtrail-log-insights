@@ -1,0 +1,13 @@
+{
+  "fileLocations": [
+      {
+          "URIs": [
+              "s3://hamacher-quicksight-2/cloudtrail-log-insights/"
+          ]
+      }
+  ],
+  "globalUploadSettings": {
+      "format": "JSON",
+      "delimiter": "\n"
+  }
+}

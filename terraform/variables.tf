@@ -68,3 +68,13 @@ variable "lambda_runtime" {
   description = "The runtime for the Lambda function"
   default     = "python3.12"
 }
+
+variable "quicksight_S3_name" {
+ type = string
+ description = "The name of the S3 bucket storing Quicksight Dataset"
+}
+
+variable "quicksight_S3_folder" {
+ type = string
+ description = "The name of the folder in the Quicksight S3 bucket to store the Quicksight Dataset"
+}
