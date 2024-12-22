@@ -16,20 +16,5 @@ cloudtrail_event_name = "ModifySecurityGroupRules"
 # The name of the security group
 security_group_name = "demo-sg"
 
-# The name of the SNS topic.  Note as of 10/15/24, there is a bug in AWS associated with 
-# CloudWatch alarms and SNS targets.  See https://stackoverflow.com/questions/62694223/cloudwatch-alarm-pending-confirmation
-# This will affect you if you apply/destroy the Terraform multiple times.  You must give the
-# SNS topic a new name each cycle.
-sns_topic_name = "demo-sns-2"
-
-# The email address subscibing to the SNS topic
-sns_email = "erichamacher@protonmail.com"
-
-# The name of the S3 bucket storing Quicksight Dataset
-quicksight_S3_name = "hamacher-quicksight"
-
-# The name of the folder in the Quicksight S3 bucket to store the Quicksight Dataset
-quicksight_S3_folder = "cloudtrail-log-insights"
-
 
 

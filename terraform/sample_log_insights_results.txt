@@ -1,0 +1,65 @@
+RESULT:  {
+"results": [
+[
+{
+"field": "userIdentity.type",
+"value": "IAMUser"
+},
+{
+"field": "userIdentity.userName",
+"value": "me_eric"
+},
+{
+"field": "eventTime",
+"value": "2024-12-22T17:12:28Z"
+},
+{
+"field": "eventName",
+"value": "ModifySecurityGroupRules"
+},
+{
+"field": "@ptr",
+"value": "1234qwerty"
+}
+],
+[
+{
+"field": "userIdentity.type",
+"value": "IAMUser"
+},
+{
+"field": "userIdentity.userName",
+"value": "me_eric"
+},
+{
+"field": "eventTime",
+"value": "2024-12-22T17:09:22Z"
+},
+{
+"field": "eventName",
+"value": "ModifySecurityGroupRules"
+},
+{
+"field": "@ptr",
+"value": "1234qwerty"
+}
+]
+],
+"statistics": {
+"recordsMatched": 2.0,
+"recordsScanned": 437.0,
+"bytesScanned": 508744.0
+},
+"status": "Complete",
+"ResponseMetadata": {
+"RequestId": "b05f3b2c-97e0-4e2f-a485-5591690eabfc",
+"HTTPStatusCode": 200,
+"HTTPHeaders": {
+"x-amzn-requestid": "b05f3b2c-97e0-4e2f-a485-5591690eabfc",
+"content-type": "application/x-amz-json-1.1",
+"content-length": "1016",
+"date": "Sun, 22 Dec 2024 17:32:39 GMT"
+},
+"RetryAttempts": 0
+}
+}
